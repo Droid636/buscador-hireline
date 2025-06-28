@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 function App() {
   // Estados para el input, los resultados, la carga, los errores y si se buscó
