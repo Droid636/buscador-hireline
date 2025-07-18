@@ -154,21 +154,25 @@ body {
 }
 
 /* Responsivo */
-@media (max-width: 480px) {
-  .jobsearch-title {
-    font-size: 1.8rem;
+@media (max-width: 768px) {
+  .jobsearch-results {
+    grid-template-columns: 1fr !important;
+    padding: 0.5rem;
   }
 
-  .jobsearch-button {
-    width: 100%;
+  .jobsearch-card {
+    max-width: 100%;
   }
+}
 
-  .jobsearch-input {
-    width: 100%;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .jobsearch-results {
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  .jobsearch-form {
-    flex-direction: column;
-    align-items: stretch;
+@media (min-width: 1025px) {
+  .jobsearch-results {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
